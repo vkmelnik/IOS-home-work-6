@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		12E5576F2746E30200657179 /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5576E2746E30200657179 /* UIView_Pin.swift */; };
 		12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; };
 		12E5578F2746E9E100657179 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12E557932746ECE900657179 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 12E557922746ECE900657179 /* MyLogger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		12E557682746E1FB00657179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E5576E2746E30200657179 /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
 		12E557872746E9C000657179 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		12E557912746ECE000657179 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../../MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */,
+				12E557932746ECE900657179 /* MyLogger2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		12E557592746E1F900657179 /* vkmelnikPW6 */ = {
 			isa = PBXGroup;
 			children = (
+				12E557912746ECE000657179 /* MyLogger2 */,
 				12E557872746E9C000657179 /* MyLogger1.xcodeproj */,
 				12E5575A2746E1F900657179 /* AppDelegate.swift */,
 				12E5575C2746E1F900657179 /* SceneDelegate.swift */,
@@ -129,6 +133,9 @@
 			dependencies = (
 			);
 			name = vkmelnikPW6;
+			packageProductDependencies = (
+				12E557922746ECE900657179 /* MyLogger2 */,
+			);
 			productName = vkmelnikPW6;
 			productReference = 12E557572746E1F900657179 /* vkmelnikPW6.app */;
 			productType = "com.apple.product-type.application";
@@ -395,6 +402,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12E557922746ECE900657179 /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12E5574F2746E1F900657179 /* Project object */;
 }

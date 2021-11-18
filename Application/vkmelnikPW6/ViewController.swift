@@ -7,6 +7,7 @@
 
 import UIKit
 import MyLogger1
+import MyLogger2
 
 class ViewController: UIViewController {
     
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     @objc func swiftPackageButtonPressed() {
-        
+        MyLogger2.log("hello, world")
     }
     
     @objc func podButtonPressed() {
