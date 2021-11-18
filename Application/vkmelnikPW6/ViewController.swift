@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLogger1
 
 class ViewController: UIViewController {
     
@@ -20,19 +21,19 @@ class ViewController: UIViewController {
         setupView()
     }
     
-    @objc private func frameworkButtonPressed() {
+    @objc func frameworkButtonPressed(_ sender: Any) {
+        MyLogger1.log("hello, world")
+    }
+    
+    @objc func swiftPackageButtonPressed() {
         
     }
     
-    @objc private func swiftPackageButtonPressed() {
+    @objc func podButtonPressed() {
         
     }
     
-    @objc private func podButtonPressed() {
-        
-    }
-    
-    @objc private func carthageButtonPressed() {
+    @objc func carthageButtonPressed() {
         
     }
     

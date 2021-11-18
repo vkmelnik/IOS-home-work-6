@@ -13,7 +13,33 @@
 		12E557642746E1FB00657179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E557632746E1FB00657179 /* Assets.xcassets */; };
 		12E557672746E1FB00657179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E557652746E1FB00657179 /* LaunchScreen.storyboard */; };
 		12E5576F2746E30200657179 /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5576E2746E30200657179 /* UIView_Pin.swift */; };
+		12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; };
+		12E5578F2746E9E100657179 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E5578B2746E9C000657179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12E557872746E9C000657179 /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12E5577A2746E91900657179;
+			remoteInfo = MyLogger1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12E557902746E9E100657179 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12E5578F2746E9E100657179 /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		12E557572746E1F900657179 /* vkmelnikPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkmelnikPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +50,7 @@
 		12E557662746E1FB00657179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E557682746E1FB00657179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E5576E2746E30200657179 /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
+		12E557872746E9C000657179 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,7 @@
 			children = (
 				12E557592746E1F900657179 /* vkmelnikPW6 */,
 				12E557582746E1F900657179 /* Products */,
+				12E5578D2746E9E100657179 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,7 @@
 		12E557592746E1F900657179 /* vkmelnikPW6 */ = {
 			isa = PBXGroup;
 			children = (
+				12E557872746E9C000657179 /* MyLogger1.xcodeproj */,
 				12E5575A2746E1F900657179 /* AppDelegate.swift */,
 				12E5575C2746E1F900657179 /* SceneDelegate.swift */,
 				12E5575E2746E1F900657179 /* ViewController.swift */,
@@ -65,6 +95,21 @@
 				12E5576E2746E30200657179 /* UIView_Pin.swift */,
 			);
 			path = vkmelnikPW6;
+			sourceTree = "<group>";
+		};
+		12E557882746E9C000657179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12E5578C2746E9C000657179 /* MyLogger1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12E5578D2746E9E100657179 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +122,7 @@
 				12E557532746E1F900657179 /* Sources */,
 				12E557542746E1F900657179 /* Frameworks */,
 				12E557552746E1F900657179 /* Resources */,
+				12E557902746E9E100657179 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,12 +158,28 @@
 			mainGroup = 12E5574E2746E1F900657179;
 			productRefGroup = 12E557582746E1F900657179 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 12E557882746E9C000657179 /* Products */;
+					ProjectRef = 12E557872746E9C000657179 /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				12E557562746E1F900657179 /* vkmelnikPW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12E5578C2746E9C000657179 /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = 12E5578B2746E9C000657179 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		12E557552746E1F900657179 /* Resources */ = {
