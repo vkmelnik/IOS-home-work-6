@@ -16,6 +16,7 @@
 		12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; };
 		12E5578F2746E9E100657179 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E5578C2746E9C000657179 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		12E557932746ECE900657179 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 12E557922746ECE900657179 /* MyLogger2 */; };
+		CD8E368A9BC7581EF91833F1 /* Pods_vkmelnikPW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2553E6F8B5EE17D7607F2B22 /* Pods_vkmelnikPW6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		12E5576E2746E30200657179 /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
 		12E557872746E9C000657179 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		12E557912746ECE000657179 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../../MyLogger2; sourceTree = "<group>"; };
+		2553E6F8B5EE17D7607F2B22 /* Pods_vkmelnikPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vkmelnikPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B87AED3144AF585AD962560 /* Pods-vkmelnikPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkmelnikPW6.release.xcconfig"; path = "Target Support Files/Pods-vkmelnikPW6/Pods-vkmelnikPW6.release.xcconfig"; sourceTree = "<group>"; };
+		69DFCCE1CBBA4B75C00BD95E /* Pods-vkmelnikPW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkmelnikPW6.debug.xcconfig"; path = "Target Support Files/Pods-vkmelnikPW6/Pods-vkmelnikPW6.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			files = (
 				12E5578E2746E9E100657179 /* MyLogger1.framework in Frameworks */,
 				12E557932746ECE900657179 /* MyLogger2 in Frameworks */,
+				CD8E368A9BC7581EF91833F1 /* Pods_vkmelnikPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 				12E557592746E1F900657179 /* vkmelnikPW6 */,
 				12E557582746E1F900657179 /* Products */,
 				12E5578D2746E9E100657179 /* Frameworks */,
+				500C849442D46AEF7B442931 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +118,19 @@
 		12E5578D2746E9E100657179 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2553E6F8B5EE17D7607F2B22 /* Pods_vkmelnikPW6.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500C849442D46AEF7B442931 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69DFCCE1CBBA4B75C00BD95E /* Pods-vkmelnikPW6.debug.xcconfig */,
+				4B87AED3144AF585AD962560 /* Pods-vkmelnikPW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,10 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12E5576B2746E1FB00657179 /* Build configuration list for PBXNativeTarget "vkmelnikPW6" */;
 			buildPhases = (
+				F48328D7EC13DDD9C841FC75 /* [CP] Check Pods Manifest.lock */,
 				12E557532746E1F900657179 /* Sources */,
 				12E557542746E1F900657179 /* Frameworks */,
 				12E557552746E1F900657179 /* Resources */,
 				12E557902746E9E100657179 /* Embed Frameworks */,
+				19ECD5B4E12346D02F762B36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19ECD5B4E12346D02F762B36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vkmelnikPW6/Pods-vkmelnikPW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vkmelnikPW6/Pods-vkmelnikPW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vkmelnikPW6/Pods-vkmelnikPW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F48328D7EC13DDD9C841FC75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vkmelnikPW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12E557532746E1F900657179 /* Sources */ = {
@@ -344,6 +405,7 @@
 		};
 		12E5576C2746E1FB00657179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DFCCE1CBBA4B75C00BD95E /* Pods-vkmelnikPW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,6 +425,7 @@
 		};
 		12E5576D2746E1FB00657179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B87AED3144AF585AD962560 /* Pods-vkmelnikPW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

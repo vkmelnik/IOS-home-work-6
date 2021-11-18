@@ -8,6 +8,7 @@
 import UIKit
 import MyLogger1
 import MyLogger2
+import MyLogger3
 
 class ViewController: UIViewController {
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     @objc func podButtonPressed() {
-        
+        MyLogger3.log("hello, world")
     }
     
     @objc func carthageButtonPressed() {
