@@ -9,6 +9,7 @@ import UIKit
 import MyLogger1
 import MyLogger2
 import MyLogger3
+import MyLogger4
 
 class ViewController: UIViewController {
     
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @objc func carthageButtonPressed() {
-        
+        MyLogger4.log("hello, world")
     }
     
     private func setupFrameworkButton() {

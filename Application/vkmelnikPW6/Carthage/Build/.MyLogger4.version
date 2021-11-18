@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3ddcf1dd961e1aff90d32e64e7b8981374930a84",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "61318bab9f42dc405c624460cef14f38f5bccd5ae4e28c3fa274951c9ef60a03",
+      "name" : "MyLogger4",
+      "container" : "MyLogger4.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "96120640456e6d628d6131131bed2b73ef20b9a64b1a7af018f5f06d8e9e8687",
+      "name" : "MyLogger4",
+      "container" : "MyLogger4.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
